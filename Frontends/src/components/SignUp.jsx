@@ -30,9 +30,9 @@ function SignUp() {
       
     }
 
-    useEffect( ()=>{
-        sendDataToBackend()
-      },[inUsername,inEmail,inPassword,inConPassword])
+    // useEffect( ()=>{
+    //     sendDataToBackend()
+    //   },[inUsername,inEmail,inPassword,inConPassword])
 
     function alert(){
     if(!data){
@@ -50,8 +50,8 @@ function SignUp() {
 
   return (
             <form className='border-3'>
-                <div className="flex justify-center flex-col items-center h-screen w-full">
-                    <div className="border-2 rounded-xl pb-12 pl-12 pr-12  bg-slate-900">
+                <div className="flex justify-center flex-col items-center h-screen ">
+                    <div className=" rounded-xl pb-12 pl-12 pr-12  bg-slate-900">
                     <h1 className='font-bold text-2xl text-center text-white py-8'>Sign Up</h1>
                     <div className='mb-3 flex flex-col'>
                         <label htmlFor="username" className='text-md font-semibold py-1 text-white'>Username </label>

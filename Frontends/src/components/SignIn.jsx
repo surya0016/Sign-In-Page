@@ -27,7 +27,7 @@ function SignIn() {
 function alert(){
     if(!data){
         return
-    }else if (data==="user already exists please signin" || data === "Invalid Input") {
+    }else if (data==="user already exists please signin" || data === "Invalid Input" || data === "Invalid username or password") {
         return <>
         <div className="text-center p-2 rounded-md bg-red-300 text-red-900">{data}!</div>
     </> 
@@ -38,9 +38,10 @@ function alert(){
     }
 }
 
-useEffect( ()=>{
-    sendDataToBackend()
-  },[inUsername,inPassword])
+// useEffect( ()=>{
+//     sendDataToBackend()
+//   },[inUsername,inPassword])
+
   return (
     <div>
       <form  className='border-3'>
