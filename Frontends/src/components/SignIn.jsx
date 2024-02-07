@@ -1,6 +1,5 @@
 import React ,{useRef, useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-// import AlertBox from './AlertBox'
 import axios from 'axios'
 
 function SignIn() {
